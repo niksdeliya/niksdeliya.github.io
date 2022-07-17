@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <!--script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script-->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="trackerrIndex.js"></script>
+    <title>Junk Tracker</title>
+  </head>
+  <body class="bg-gray-700">
+  	<h1 class="block p-6 rounded-lg shadow-lg bg-black font-light leading-tight bold text-5xl mt-0 mb-2 text-white text-center">Welcome to Junk Food Tracker</h1>
+    <div class="mt-10 block p-6 rounded-lg shadow-lg bg-black max-w-sm" 
+    style="margin-left: 40%">
+      <form>
+      <div class="form-group mb-6">
+        <label for="inputUserName" class="form-label inline-block mb-2 text-white">Username</label>
+        <input type="text" class="form-control
+        block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-white
+        bg-black bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        hover:bg-gray-700 hover:shadow-lg
+        focus:text-white focus:bg-black focus:border-blue-600 focus:outline-none" id="enteredUserName" placeholder="Enter Username">
+        <small id="userNameHelp" class="form-text text-muted text-gray-400">Use your created username.</small>
+      </div>
+      <div class="form-group mb-6">
+        <label for="inputDate" class="form-label inline-block mb-2 text-white">Date</label>
+        <input type="text" class="form-control
+        block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-white
+        bg-black bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        hover:bg-gray-700 hover:shadow-lg
+        focus:text-white focus:bg-black focus:border-blue-600 focus:outline-none" id="enteredDate" placeholder="Enter Date in YYYYMMDD">
+        <small id="dateHelp" class="form-text text-muted text-gray-400">Enter the date when the junk food was consumed.</small>
+      </div>
+      <div class="form-group mb-6">
+        <label for="inputFoodItems" class="form-label inline-block mb-2 text-white">Junk Food Items</label>
+        <input type="text" class="form-control
+        block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-white
+        bg-black bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        hover:bg-gray-700 hover:shadow-lg
+        focus:text-white focus:bg-black focus:border-blue-600 focus:outline-none" id="enteredFoodItems" placeholder="Enter Username">
+        <small id="foodItemHelp" class="form-text text-muted text-gray-400">Multiple food items seperated by , can be added.</small>
+      </div>
+    
+      <div class="form-group mb-6">
+        <label for="inputFoodItems" class="form-label inline-block mb-2 text-white">Duration</label>
+        <input type="text" class="form-control
+        block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-white
+        bg-black bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        hover:bg-gray-700 hover:shadow-lg
+        focus:text-white focus:bg-black focus:border-blue-600 focus:outline-none" id="enteredDuration" placeholder="Breakfast, Lunch, Evening, Dinner">
+        <small id="foodItemHelp" class="form-text text-muted text-gray-400">Multiple durations seperated by , can be added.</small>
+      </div>
+
+     <button type="submit" class="
+      w-full
+      px-6
+      py-2.5
+      bg-blue-600
+      text-white
+      font-medium
+      text-xs
+      leading-tight
+      uppercase
+      rounded
+      shadow-md
+      hover:bg-blue-700 hover:shadow-lg
+      focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+      active:bg-blue-800 active:shadow-lg
+      transition
+      duration-150
+      ease-in-out" onclick="getUserData()">Submit Details</button>
+      </form>
+    </div>
+  </body>
+</html>
